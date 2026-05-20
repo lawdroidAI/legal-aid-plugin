@@ -1,0 +1,32 @@
+# CODEOWNERS
+# Each line is a file pattern followed by one or more owners.
+# Owners are auto-requested as reviewers on PRs touching their paths.
+# See: https://docs.github.com/en/repositories/managing-your-repositories-settings-and-security/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo (catches anything not matched below)
+*                              @lawdroid
+
+# Security policy and disclosure
+/SECURITY.md                   @lawdroid
+
+# Plugin manifest and MCP configuration (sensitive: connector wiring, permissions)
+/.claude-plugin/               @lawdroid
+/.mcp.json                     @lawdroid
+
+# Skills that touch prospective-client confidentiality and Rule 1.18
+/skills/eligibility-screening/ @lawdroid
+/skills/client-intake/         @lawdroid
+/skills/client-letter/         @lawdroid
+/skills/client-comms-log/      @lawdroid
+
+# Skills that touch funder restrictions and compliance reporting
+/skills/draft/                 @lawdroid
+/skills/memo/                  @lawdroid
+/skills/lsc-report/            @lawdroid
+
+# Supervision model and managing-attorney workflows
+/skills/managing-attorney-review/ @lawdroid
+/skills/cold-start-interview/  @lawdroid
+
+# CI/CD and security workflows
+/.github/                      @lawdroid
