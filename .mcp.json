@@ -1,0 +1,43 @@
+{
+  "_comment": "Civil legal aid + court self-help — community connectors only. Provider-specific public-facing intake integrations (e.g., LawDroid's Legal Information Assistant and Voice Intake Assistant, which feed upstream caller conversations into the plugin's eligibility-screening and client-intake skills) are not bundled here; deploying offices can add them via the office's CLAUDE.md integrations table if licensed.",
+  "mcpServers": {
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, find discussions across your workspace."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch documents from Google Drive."
+    },
+    "CourtListener": {
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/",
+      "title": "CourtListener",
+      "description": "Free Law Project's legal research platform — U.S. court opinions, PACER dockets, judge profiles, citation verification."
+    },
+    "Courtroom5": {
+      "type": "http",
+      "url": "https://mcp.courtroom5.com",
+      "title": "Courtroom5",
+      "description": "Jurisdiction-aware guidance for self-represented litigants — case intake, deadline calculations, procedural next steps."
+    },
+    "Descrybe": {
+      "type": "http",
+      "url": "https://mcp.descrybe.com/mcp",
+      "title": "Descrybe",
+      "description": "Primary law research — search cases by concept or wording, find cases from citations, extract authorities, verify quoted language."
+    }
+  },
+  "recommendedCategories": [
+    "case-management",
+    "legal-research",
+    "case-law",
+    "intake-screening",
+    "documents",
+    "chat"
+  ]
+}
