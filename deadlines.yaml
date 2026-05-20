@@ -1,0 +1,34 @@
+# Office deadline ledger — legal-aid
+#
+# Populated by /legal-aid:deadlines --add (or by extraction from
+# /eligibility-screening, /client-intake, /draft, /status when those skills
+# surface a deadline). Read by /legal-aid:deadlines --report for cross-case
+# rollup and by /case-transfer when a case changes hands.
+#
+# Missed deadlines in legal aid work are malpractice exposure for the
+# managing attorney. Treat this file as the operational record.
+#
+# ──────────────────────────────────────────────────────────────────────────
+# Schema
+# ──────────────────────────────────────────────────────────────────────────
+# - id:             string (slug: [case]-[short-description]-[YYYY-MM])
+#   case_id:        string — references the case in CMS or intake system
+#   case_name:      string — human-readable case name
+#   practice_area:  housing | family | consumer | immigration | public-benefits | civil-rights | elder | dv | other
+#   funding_source: lsc | iolta | hud | vawa | voca | state | foundation | private | mixed
+#   type:           filing | hearing | statute-of-limitations | discovery | cure-period | response | notice | administrative-appeal | other
+#   description:    string — one-line what's due
+#   due_date:       YYYY-MM-DD
+#   time:           HH:MM (optional)
+#   timezone:       string (optional; default from CLAUDE.md jurisdiction)
+#   source:         string — where the deadline came from (court order, statute, agency notice, client doc, etc.)
+#   owner_staff:    string — staff attorney or paralegal owning the deadline
+#   owner_attorney: string — managing attorney
+#   status:         upcoming | today | overdue | completed | closed
+#   completed_date: YYYY-MM-DD | null
+#   notes:          string | null
+#   created:        YYYY-MM-DD
+#   created_by:     string — staffer who logged it
+# ──────────────────────────────────────────────────────────────────────────
+
+deadlines: []
