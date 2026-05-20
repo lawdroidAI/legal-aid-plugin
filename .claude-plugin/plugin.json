@@ -1,0 +1,8 @@
+{
+  "name": "legal-aid",
+  "version": "0.1.0",
+  "description": "Civil legal aid and court self-help — eligibility screening, structured intake, jurisdiction-aware drafting, managing-attorney review, and rolling case transfers — built within ABA Formal Op. 512 and LSC program rules.",
+  "author": {
+    "name": "LawDroid Ltd."
+  }
+}
