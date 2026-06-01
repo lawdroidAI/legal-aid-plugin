@@ -8,6 +8,9 @@ A plugin for civil legal aid organizations, court self-help centers, and public-
 
 **Every output is a draft for staff analysis and managing-attorney review: marked, gated, and logged. The plugin scaffolds the work; staff reason through it; a managing attorney reviews. Nothing leaves the office without going through the supervision model the organization set at setup.**
 
+> [!IMPORTANT]
+> **Every output from this plugin is not legal advice, not a legal conclusion, not a substitute for a lawyer.** A lawyer must review, verify, and take professional responsibility for all work product, even that created with the aid of this plugin. This plugin is intended to help, not replace lawyers nor their professional judgment.
+
 ## The problem the Legal Aid Plugin solves
 
 Civil legal aid is structurally capacity-constrained. A managing attorney supervises 5–20 staff. Each staff attorney carries 40–80 active matters. Intake volume routinely exceeds capacity by 3x to 5x. Eligibility screening, intake write-up, first drafts, status updates, referral letters, court self-help triage — the administrative load consumes hours that could go to advising clients. The result: long intake queues, declined cases, people who give up waiting.
